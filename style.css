@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    border: 0;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 53%, rgba(46,19,51,1) 100%);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.container{
+    width: 600px;
+    height: fit-content;
+}
+.info{
+    background-color: black;
+    opacity: 1;
+    border: 10px solid white;
+    border-radius: 20px;
+    height: 300px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 
+    "a b b"
+    "c b b"
+    "d e e";
+    grid-template-columns: 0.8fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.city{
+    font-size: 2em;
+    grid-area: a;
+    place-self: center;
+}
+.citytemp{
+    grid-area: c;
+    place-self: center;
+    font-size: 4em;
+}
+.divicon{
+    grid-area: d;
+    justify-self: center;
+}
+.cambiolugar{
+    text-align: center;
+}
+.divgif{
+    grid-area: b;
+}
+.divgif>img{
+    height: 100%;
+    width: 100%;
+}
